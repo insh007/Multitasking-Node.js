@@ -1,5 +1,5 @@
 const express = require('express')
-const workerpool = require('workerpool')
+const workerpool = require('workerpool')  // workerpool external library or package 
 const pool = workerpool.pool('./worker.js')
 const app = express()
 

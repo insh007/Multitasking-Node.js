@@ -1,4 +1,4 @@
-const workerpool = require('workerpool')
+const workerpool = require('workerpool')   // workerpool external library or package
 
 const complexCalc = () => {
     let  counter = 0
