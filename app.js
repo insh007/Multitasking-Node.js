@@ -9,6 +9,7 @@ if(isMainThread){
     })
 
     app.get("/heavy", (req, res) => {
+        //__filename will use the current file itself
         const worker = new Worker(__filename, { workerData: "workerOne" })
         worker.on("message", (data) => {
             res.send(data)
